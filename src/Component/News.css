@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: auto;
+ }
+
+.container{
+    width: 100%;
+    padding: 15px;
+}
+
+.text-container{
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.jumbotron{
+    /* background-color: #f4511e; */
+    color: #0a0101;
+    font-family: Montserrat, sans-serif;
+    border-radius: 10px;
+}
+
+
+.description{
+    width: 90%;
+    font-size: 20px;
+    font-weight: 40;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.source{
+    font-size: 20px;
+    font-weight: 40;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 15%;
+    background-color: #0a0101;
+    color: #f1f1f1;
+    padding: 8px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.image{
+    width: 97%;
+    height: 100vh;
+    padding: 15px;
+    margin: 15px;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+}
+
+button {
+    background-color: #2346e0;
+    color: #f1f1f1;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 11%;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.containers{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 10px;
+}
+
+.social-button{
+    color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    justify-self: space-between;    
+    font-size: 16px;
+    cursor: pointer;
+    gap: 50px;
+    justify-content: center;    
+}
+
+.github-Icon{
+    color: #171515 ;
+}
+
+.linkedin-Icon{
+    color: #0072b1;
+}
+.twitter-Icon{
+    color: #00acee;
+}
+
+.reddit-Icon{
+    color: #ff4500;
+}
+
+.facebook-Icon{
+    color: #3b5998;
+}
+
+.google-plus-Icon{
+    color: #dd4b39;
+}
