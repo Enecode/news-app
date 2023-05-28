@@ -25,43 +25,45 @@ const News = () => {
   }, []);
 
   return (
-    <div className='container'>
+    <>
         
       {articles.map((article) => (
-        <div className='jumbotron'>
-            <img src={article.urlToImage} className='image' alt=''/>
-        <div className='text-container'>
-          <div key={article.title}>
-            <h2 className='title'>{article.title}</h2>
-            <p className='description'>{article.description}</p>
-            <div className='containers'>
-              <p className='source'>{article.source.name}</p>
-              <div className="social-button">
-                <a href="#j">
-                  <FontAwesomeIcon icon={faReddit} className="reddit-Icon" size="2x" />
-                </a>
-                <a href="#j" className="twitter-Icon">
-                  <FontAwesomeIcon icon={faTwitter} size="2x" />
-                </a>
-                <a href="#j" className="facebook-Icon">
-                  <FontAwesomeIcon icon={faFacebook} size="2x" />
-                </a>
-                <a href="#j" className="google-plus-Icon">
-                  <FontAwesomeIcon icon={faGooglePlus} size="2x" />
-                </a>
-                <a href="#j">
-                  <FontAwesomeIcon icon={faLinkedin} className="linkedin-Icon" size="2x" />
-                </a>               
-              </div>
-              <button className='url' onClick={() => readMore(article.url) }>Read More</button>
-            </div>
+        <div className='container'>
+          <div className='image-container'>
+            <img src={article.urlToImage} alt={article.title} className='image' />
           </div>
-          <hr />
-        </div>
-        </div>
+          <div className='text-container'>
+            <div key={article.title}>
+              <h2 className='title'>{article.title}</h2>
+              <p className='description'>{article.description}</p>
+              <div className='containers'>
+                <div><p className='source'>{article.source.name}</p></div>
+                <div className="social-button">
+                  <a href="#j">
+                    <FontAwesomeIcon icon={faReddit} className="reddit-Icon" size="2x" />
+                  </a>
+                  <a href="#j" className="twitter-Icon">
+                    <FontAwesomeIcon icon={faTwitter} size="2x" />
+                  </a>
+                  <a href="#j" className="facebook-Icon">
+                    <FontAwesomeIcon icon={faFacebook} size="2x" />
+                  </a>
+                  <a href="#j" className="google-plus-Icon">
+                    <FontAwesomeIcon icon={faGooglePlus} size="2x" />
+                  </a>
+                  <a href="#j">
+                    <FontAwesomeIcon icon={faLinkedin} className="linkedin-Icon" size="2x" />
+                  </a>
+                </div>
+                <div className=''><button className='url' onClick={() => readMore(article.url) }>Read More</button></div>
+              </div>
+            </div>
+            <hr />
+          </div>
         
-      ))}
-    </div>
+      </div>
+    ))}
+    </>
   );
 };
 
